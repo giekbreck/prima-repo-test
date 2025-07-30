@@ -1,3 +1,5 @@
+// linea di modifica per test git bash
+
 // a partire dal codice fornito vado a modificare per ottenere l'output richiesto
 
 import org.apache.spark.sql.SparkSession
