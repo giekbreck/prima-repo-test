@@ -1,11 +1,7 @@
 
 // prova commit tramite vscode
 
-<<<<<<< HEAD
-// Modifica parallela su main
-=======
 // modifica fatta da giek
->>>>>>> modifica-da-giacomo
 
 // linea di modifica per test git bash
 
