@@ -1,0 +1,18 @@
+#VSCODE
+.vscode/
+
+#file temporanei
+*.log
+*.tmp
+
+#OS
+.DS_Store
+Thumbs.db
+
+#Scala/java/SBT
+target/
+out/
+
+#Python
+_pycache_/
+.env
