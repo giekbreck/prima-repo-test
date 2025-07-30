@@ -1,6 +1,6 @@
 // prova commit tramite vscode
 
-// linea per test modifica branch
+// Modifica parallela su main
 
 // linea di modifica per test git bash
 
