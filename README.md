@@ -24,10 +24,12 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto 👇
 git config --global user.name "Giacomo Danese"
 git config --global user.email "giacomodanese7@gmail.com"
 
+---
 
 ## Clonare una repo
 git clone https://github.com/giekbreck/prima-repo-test.git
 
+---
 
 ## Ciclo modifica → commit → push
 git status
@@ -35,39 +37,44 @@ git add <file>
 git commit -m "Messaggio"
 git push origin main
 
+---
 
 ## Branching
 git checkout -b nuovo-branch
 git switch main
 git merge altro-branch
 
+---
 
 ## Stash
 git stash
 git stash list
 git stash apply
 
+---
+
 ## Tag e Release
 git tag -a v1.0 -m "Prima versione stabile"
 git push origin v1.0
 
+---
 
 ## To-do personali
 ### Completati
- -Creare struttura cartelle (src, docs, test)
+- Creare struttura cartelle (src, docs, test)
 
- -Spostare i file nel posto giusto
+- Spostare i file nel posto giusto
 
- -Usare .gitignore
+- Usare .gitignore
 
- -Capire gli stash
+- Capire gli stash
 
- -Creare un tag e una release
+- Creare un tag e una release
 
 ### To-do
- Aggiungere file reali
+- Aggiungere file reali
 
- Imparare i pull request tra fork
+- Imparare i pull request tra fork
 
- Automatizzare alcune operazioni con script
+- Automatizzare alcune operazioni con script
 
