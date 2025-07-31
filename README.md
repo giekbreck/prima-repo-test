@@ -26,12 +26,12 @@ git config --global user.email "giacomodanese7@gmail.com"
 
 ---
 
-## Clonare una repo
+### Clonare una repo
 git clone https://github.com/giekbreck/prima-repo-test.git
 
 ---
 
-## Ciclo modifica → commit → push
+### Ciclo modifica → commit → push
 git status
 git add <file>
 git commit -m "Messaggio"
@@ -39,28 +39,28 @@ git push origin main
 
 ---
 
-## Branching
+### Branching
 git checkout -b nuovo-branch
 git switch main
 git merge altro-branch
 
 ---
 
-## Stash
+### Stash
 git stash
 git stash list
 git stash apply
 
 ---
 
-## Tag e Release
+### Tag e Release
 git tag -a v1.0 -m "Prima versione stabile"
 git push origin v1.0
 
 ---
 
-## To-do personali
-### Completati
+### To-do personali
+#### Completati
 - Creare struttura cartelle (src, docs, test)
 
 - Spostare i file nel posto giusto
@@ -71,7 +71,7 @@ git push origin v1.0
 
 - Creare un tag e una release
 
-### To-do
+#### To-do
 - Aggiungere file reali
 
 - Imparare i pull request tra fork
