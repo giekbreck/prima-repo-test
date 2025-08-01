@@ -7,19 +7,22 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto
 
 ---
 
-##  Indice
+## Indice
 
-- [ Contenuto della repo](#-contenuto-della-repo)
-- [ Comandi Git che ho imparato](#️-comandi-git-che-ho-imparato)
-  - [ Primo setup](#-primo-setup)
-  - [ Clonare una repo](#-clonare-una-repo)
-  - [ Ciclo modifica → commit → push](#-ciclo-modifica--commit--push)
-  - [ Gestione dei branch](#-gestione-dei-branch)
-  - [ Usare lo stash](#-usare-lo-stash)
-  - [ Creare un tag e una release](#-creare-un-tag-e-una-release)
-- [ To-do personali](#-to-do-personali)
-- [ LICENSE (MIT)](#-license-mit)
-- [ CHANGELOG](#-changelog)
+- [Contenuto della repo](#contenuto-della-repo)
+- [Comandi Git che ho imparato](#comandi-git-che-ho-imparato)
+  - [Primo setup](#primo-setup)
+  - [Clonare una repo](#clonare-una-repo)
+  - [Ciclo modifica → commit → push](#ciclo-modifica--commit--push)
+  - [Errore: Push rifiutato perché il branch remoto è più aggiornato](#errore-push-rifiutato-perché-il-branch-remoto-è-più-aggiornato)
+  - [Gestione dei branch](#gestione-dei-branch)
+  - [Usare lo stash](#usare-lo-stash)
+  - [Creare un tag e una release](#creare-un-tag-e-una-release)
+  - [Aggiornare release](#aggiornare-release)
+- [To-do personali](#to-do-personali)
+- [LICENSE (MIT)](#license-mit)
+- [CHANGELOG](#changelog)
+
 
 ---
 
