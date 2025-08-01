@@ -229,17 +229,17 @@ Funziona come una ricerca binaria: Git ti fa testare volta per volta commit inte
 
 #### Come funziona:
 
-1. **Avvia la modalità bisect**
+1. Avvia la modalità bisect
    ```bash
    git bisect start
    ```
    
-2. **Per prima cosa dichiarare il commit 'cattivo' (sono iniziati gli errori)**
+2. Per prima cosa dichiarare il commit 'cattivo' (sono iniziati gli errori)
    ```bash
    git bisect bad
    ```
 
-3. **Dichiara il commit buono (l'ultimo in cui sai che ancora funzionava)**
+3. Dichiara il commit buono (l'ultimo in cui sai che ancora funzionava)
    ```bash
    git bisect good <inserisci numero-hash oppure tag>
    ```
@@ -265,17 +265,17 @@ Funziona come una ricerca binaria: Git ti fa testare volta per volta commit inte
 
 **ESEMPIO:**
 
-# Avvio della ricerca del bug
+#### Avvio della ricerca del bug
 git bisect start
 git bisect bad                 # L’ultimo commit con il bug
 git bisect good HEAD~3         # Commit noto funzionante (al posto di HEAD~3 puoi mettere il numero di hash del commit)
 
-# Dopo vari test...
+#### Dopo vari test...
 git bisect good                # Se il commit testato funziona
 git bisect bad                 # Se il commit testato è rotto
 
-# Risultato finale
-# Git ti dice: "commit XYZ è il primo cattivo"
+#### Risultato finale
+#### Git ti dice: "commit XYZ è il primo cattivo"
 
 git bisect reset               # Torna al branch principale
 
