@@ -317,16 +317,18 @@ THE SOFTWARE.
 ## CHANGELOG
 
 
-#### v1.0 – 2025-07-31
-Prima versione stabile del progetto
+#### v1.2 - 2025-08-01
+-  Aggiunto comando `git restore` per annullare modifiche locali
 
--Aggiunta struttura base (src, docs, test)
+-  Comandi `git reset`, `git reset --soft`, `--mixed`, `--hard` per gestire errori nei commit
 
--Creato .gitignore
+-  `git cherry-pick` per applicare singoli commit tra branch
 
--Primo file Scala spostato in src/
+-  `git revert` per annullare un commit in modo sicuro
 
--Creato tag v1.0 e release associata
+-  `git bisect` per trovare il commit che introduce un bug
+
+-  README aggiornato con esempi
 
 
 #### v1.1 - 2025-08-01
@@ -337,3 +339,13 @@ Prima versione stabile del progetto
 -Aggiornamento struttura e documentazione
 
 
+#### v1.0 – 2025-07-31
+**Prima versione stabile del progetto**
+
+-Aggiunta struttura base (src, docs, test)
+
+-Creato .gitignore
+
+-Primo file Scala spostato in src/
+
+-Creato tag v1.0 e release associata
