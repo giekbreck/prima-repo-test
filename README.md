@@ -21,6 +21,7 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto
   - [Aggiornare release](#aggiornare-release)
   - [Annullare modifiche: `git restore` e `git reset`](#annullare-modifiche-git-restore-e-git-reset)
   - [Applicare un singolo commit: `git cherry-pick`](#applicare-un-singolo-commit-git-cherry-pick)
+  - [Annullare un commit pubblico: `git revert`](#annullare-un-commit-pubblico-git-revert)
 - [To-do personali](#to-do-personali)
 - [LICENSE (MIT)](#license-mit)
 - [CHANGELOG](#changelog)
@@ -193,6 +194,28 @@ git log cherry-branch --oneline
 git cherry-pick acd6cc3
 
 ```
+
+---
+
+### Annullare un commit pubblico: `git revert`
+
+Il comando `git revert` serve per annullare un commit precedente ma senza cancellarlo dalla cronologia.
+
+Git crea un nuovo commit "inverso" che annulla gli effetti del commit originale.
+
+È il metodo sicuro da usare su branch pubblici (come `main`), perché non riscrive la cronologia
+
+```bash
+# 1. Trova l'hash del commit da annullare
+git log --oneline
+
+# 2. Esegui il revert (Git aprirà l’editor per il messaggio)
+git revert <commit-hash>
+
+```
+
+Dopo averlo lanciato si aprirà sul terminale una finestra per inserire un messaggio relativo al commit creato da git revert.
+Scrivi il messaggio e per chiudere la finestra premi tasto esc e digita :wq, altrimento :!q per uscire senza salvare
 
 ---
 
