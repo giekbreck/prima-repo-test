@@ -19,7 +19,7 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto
   - [Usare lo stash](#usare-lo-stash)
   - [Creare un tag e una release](#creare-un-tag-e-una-release)
   - [Aggiornare release](#aggiornare-release)
-  - [Annullare modifiche: `git restore` e `git reset`](#annullare-modifiche:-'git-restore'-e-'git-reset')
+  -  [Annullare modifiche: `git restore` e `git reset`](#annullare-modifiche-git-restore-e-git-reset)
 - [To-do personali](#to-do-personali)
 - [LICENSE (MIT)](#license-mit)
 - [CHANGELOG](#changelog)
