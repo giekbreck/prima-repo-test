@@ -164,13 +164,22 @@ THE SOFTWARE.
 
 ## CHANGELOG
 
-v1.0 – 2025-07-31
--✅ Prima versione stabile del progetto
+#### v1.0 – 2025-07-31
+Prima versione stabile del progetto
 
 -Aggiunta struttura base (src, docs, test)
 
 -Creato .gitignore
 
 -Primo file Scala spostato in src/
+
+#### v1.1 - 2025-08-01
+-Aggiunto notebook "test_git.ipynb" nella cartella src/
+
+-Aggiunta sezione "Errore push rifiutato" nel README
+
+-Aggiornamento struttura e documentazione
+
+
 
 -Creato tag v1.0 e release associata
