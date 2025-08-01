@@ -134,6 +134,39 @@ git push origin v1.0
 
 ---
 
+### Annullare modifiche: `git restore` e `git reset`
+
+#### `git restore`
+
+Annulla modifiche non ancora aggiunte allo staging.  
+Esempio: hai modificato un file ma vuoi tornare alla versione salvata nel repo.
+
+```bash
+git restore nomefile.ext
+```
+
+### 'git reset'
+
+Hai già lanciato git add ma vuoi tornare indietro:
+
+```bash
+git add nomefile.ext      # aggiunge il file al commit
+git reset nomefile.ext    # lo rimuove dal commit, ma NON cancella la modifica
+
+```
+
+#### git reset con HEAD
+
+| Comando                    | Cosa fa                                                    |
+| -------------------------- | ---------------------------------------------------------- |
+| `git reset --soft HEAD~1`  | Annulla l'ultimo commit, ma **mantiene i file in staging** |
+| `git reset --mixed HEAD~1` | Annulla il commit e **rimuove i file dallo staging**       |
+| `git reset --hard HEAD~1`  | Annulla tutto e **cancella anche le modifiche locali**     |
+
+Attenzione: --hard è distruttivo. Usalo solo se sei sicuro.
+
+---
+
 ## To-do personali
 
 ### Completati
