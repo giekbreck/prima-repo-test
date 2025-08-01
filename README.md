@@ -114,6 +114,23 @@ git push origin v1.0
 
 ---
 
+
+### Aggiornare release
+
+-Vai sulla tua pagina GitHub
+
+-Clicca su “Draft a new release”
+
+-Scegli il tag v1.1
+
+-Titolo: Versione 1.1 – Notebook + README
+
+-Corpo: copia ciò che hai scritto nel changelog
+
+-Pubblica cliccando "Publish release"
+
+---
+
 ## To-do personali
 
 ### Completati
@@ -176,7 +193,7 @@ Prima versione stabile del progetto
 #### v1.1 - 2025-08-01
 -Aggiunto notebook "test_git.ipynb" nella cartella src/
 
--Aggiunta sezione "Errore push rifiutato" nel README
+-Aggiunta sezione "Errore push rifiutato" e "Aggiornare release" nel README
 
 -Aggiornamento struttura e documentazione
 
