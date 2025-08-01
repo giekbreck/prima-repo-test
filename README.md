@@ -117,7 +117,7 @@ git push origin v1.0
 
 ### Aggiornare release
 
--Vai sulla tua pagina GitHub
+-Vai nella sezione 'Releases' sulla tua pagina GitHub
 
 -Clicca su “Draft a new release”
 
