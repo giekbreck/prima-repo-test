@@ -148,7 +148,7 @@ Esempio: hai modificato un file ma vuoi tornare alla versione salvata nel repo.
 git restore nomefile.ext
 ```
 
-#### 'git reset'
+#### `git reset`
 
 Hai già lanciato git add ma vuoi tornare indietro:
 
@@ -332,20 +332,20 @@ THE SOFTWARE.
 
 
 #### v1.1 - 2025-08-01
--Aggiunto notebook "test_git.ipynb" nella cartella src/
+- Aggiunto notebook "test_git.ipynb" nella cartella src/
 
--Aggiunta sezione "Errore push rifiutato" e "Aggiornare release" nel README
+- Aggiunta sezione "Errore push rifiutato" e "Aggiornare release" nel README
 
--Aggiornamento struttura e documentazione
+- Aggiornamento struttura e documentazione
 
 
 #### v1.0 – 2025-07-31
 **Prima versione stabile del progetto**
 
--Aggiunta struttura base (src, docs, test)
+- Aggiunta struttura base (src, docs, test)
 
--Creato .gitignore
+- Creato .gitignore
 
--Primo file Scala spostato in src/
+- Primo file Scala spostato in src/
 
--Creato tag v1.0 e release associata
+- Creato tag v1.0 e release associata
