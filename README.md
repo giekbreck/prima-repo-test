@@ -64,6 +64,26 @@ git push origin main
 
 ---
 
+### Errore: Push rifiutato perché il branch remoto è più aggiornato
+
+Se quando fai `git push origin main` ottieni questo errore:
+```bash
+! [rejected] main -> main (fetch first)
+error: failed to push some refs to ...
+hint: Updates were rejected because the remote contains work that you do not have locally.
+```
+
+Questo significa che il branch su GitHub contiene dei commit che non sono ancora presenti nel tuo repository locale..
+
+#### Consiglio: quando lavori su più dispositivi o anche via web, fai sempre un pull prima di un push:
+
+```bash
+git pull origin main --rebase
+git push origin main
+```
+
+---
+
 ###  Gestione dei branch
 
 ```bash
