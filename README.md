@@ -22,6 +22,7 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto
   - [Annullare modifiche: `git restore` e `git reset`](#annullare-modifiche-git-restore-e-git-reset)
   - [Applicare un singolo commit: `git cherry-pick`](#applicare-un-singolo-commit-git-cherry-pick)
   - [Annullare un commit pubblico: `git revert`](#annullare-un-commit-pubblico-git-revert)
+  - [Trovare il commit che ha introdotto un bug: `git bisect`](#trovare-il-commit-che-ha-introdotto-un-bug-git-bisect)
 - [To-do personali](#to-do-personali)
 - [LICENSE (MIT)](#license-mit)
 - [CHANGELOG](#changelog)
@@ -216,6 +217,68 @@ git revert <commit-hash>
 
 Dopo averlo lanciato si aprirà sul terminale una finestra per inserire un messaggio relativo al commit creato da git revert.
 Scrivi il messaggio e per chiudere la finestra premi tasto esc e digita :wq, altrimento :!q per uscire senza salvare
+
+---
+
+
+### Trovare il commit che ha introdotto un bug: `git bisect`
+
+Il comando `git bisect` ti aiuta a scoprire esattamente quale commit ha introdotto un bug o un errore.  
+Funziona come una ricerca binaria: Git ti fa testare volta per volta commit intermedi finché non individua il colpevole.
+
+
+#### Come funziona:
+
+1. **Avvia la modalità bisect**
+   ```bash
+   git bisect start
+   ```
+   
+2. **Per prima cosa dichiarare il commit 'cattivo' (sono iniziati gli errori)**
+   ```bash
+   git bisect bad
+   ```
+
+3. **Dichiara il commit buono (l'ultimo in cui sai che ancora funzionava)**
+   ```bash
+   git bisect good <inserisci numero-hash oppure tag>
+   ```
+
+4. A questo punto Git fa un check per trovare un commit intermedio tra il good ed il bad
+   D'ora in poi sei tu che devi verificare se ti trovi ad un commit che abbia dei bug o meno.
+
+5. Quindi volta per volta scrivi:
+   ```bash
+   git bisect good
+
+   #oppure
+
+   git bisect bad
+   ```
+
+6. Vai avanti così fino a quando non trovi l'ultimo commit buono (o il primo non funzionante)
+
+7.Ora chiudi e torna al branch:
+   ```bash
+   git bisect reset
+   ```
+
+**ESEMPIO:**
+
+# Avvio della ricerca del bug
+git bisect start
+git bisect bad                 # L’ultimo commit con il bug
+git bisect good HEAD~3         # Commit noto funzionante (al posto di HEAD~3 puoi mettere il numero di hash del commit)
+
+# Dopo vari test...
+git bisect good                # Se il commit testato funziona
+git bisect bad                 # Se il commit testato è rotto
+
+# Risultato finale
+# Git ti dice: "commit XYZ è il primo cattivo"
+
+git bisect reset               # Torna al branch principale
+
 
 ---
 
