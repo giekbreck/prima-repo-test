@@ -19,7 +19,8 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto
   - [Usare lo stash](#usare-lo-stash)
   - [Creare un tag e una release](#creare-un-tag-e-una-release)
   - [Aggiornare release](#aggiornare-release)
-  -  [Annullare modifiche: `git restore` e `git reset`](#annullare-modifiche-git-restore-e-git-reset)
+  - [Annullare modifiche: `git restore` e `git reset`](#annullare-modifiche-git-restore-e-git-reset)
+  - [Applicare un singolo commit: `git cherry-pick`](#applicare-un-singolo-commit-git-cherry-pick)
 - [To-do personali](#to-do-personali)
 - [LICENSE (MIT)](#license-mit)
 - [CHANGELOG](#changelog)
@@ -118,7 +119,6 @@ git push origin v1.0
 
 ---
 
-
 ### Aggiornare release
 
 -Vai nella sezione 'Releases' sulla tua pagina GitHub
@@ -168,25 +168,35 @@ Attenzione: --hard è distruttivo. Usalo solo se sei sicuro.
 
 ---
 
+### Applicare un singolo commit: `git cherry-pick`
+
+Serve per prendere un singolo commit da un altro branch e applicarlo al branch attuale senza fare un merge completo.
+
+#### Esempio d’uso
+
+```bash
+# 1. Crea un nuovo branch e fai un commit:
+git checkout -b cherry-branch
+echo "// file per cherry-pick" > src/file_cherry.scala
+git add src/file_cherry.scala
+git commit -m "feat: aggiunto file per testare cherry-pick"
+
+# 2. Torna su main
+git checkout main
+
+# 3. Trova l'hash del commit da cherry-pick
+git log cherry-branch --oneline
+
+# 4. copia il codice dell'hash corrispondente al commit (in questo caso era 'acd6cc3') 
+
+# 5. Applica solo quel commit su main
+git cherry-pick acd6cc3
+
+```
+
+---
+
 ## To-do personali
-
-### Completati
-- Creare struttura cartelle (src, docs, test)
-
-- Spostare i file nel posto giusto
-
-- Usare .gitignore
-
-- Capire gli stash
-
-- Creare un tag e una release
-
-### In spospeso
-- Aggiungere file reali
-
-- Imparare i pull request tra fork
-
-- Automatizzare alcune operazioni con script
 
 ---
 
