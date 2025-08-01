@@ -268,7 +268,7 @@ Funziona come una ricerca binaria: Git ti fa testare volta per volta commit inte
 #### Avvio della ricerca del bug
 git bisect start
 git bisect bad                 # L’ultimo commit con il bug
-git bisect good HEAD~3         # Commit noto funzionante (al posto di HEAD~3 puoi mettere il numero di hash del commit)
+git bisect good HEAD~3         # Commit noto funzionante, al posto di HEAD~3 puoi mettere il numero di hash del commit
 
 #### Dopo vari test...
 git bisect good                # Se il commit testato funziona
