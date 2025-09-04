@@ -137,7 +137,7 @@ git push origin v1.0
 
 ---
 
-### Annullare modifiche: `git restore` e `git reset`
+### Annullare modifiche o correggere commit
 
 #### `git restore`
 
@@ -167,6 +167,32 @@ git reset nomefile.ext    # lo rimuove dal commit, ma NON cancella la modifica
 | `git reset --hard HEAD~1`  | Annulla tutto e **cancella anche le modifiche locali**     |
 
 Attenzione: --hard è distruttivo. Usalo solo se sei sicuro.
+
+#### git commit --amend
+
+Permette di modificare il messaggio dell'ultimo commit oppure aggiungere altri file al commit più recente.
+
+##### Per modificare solo il messaggio
+
+```bash
+git commit --amend
+```
+
+##### Per aggiungere un file
+
+Aggiunge il file nel commit come se fosse sempre stato presente
+
+```bash
+git add file_dimenticato.txt
+git commit --amend
+```
+
+ATTENZIONE: se il push è già stato effettuato va lanciato il comando
+
+```bash
+git push --force
+```
+
 
 ---
 
