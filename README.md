@@ -19,7 +19,7 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto
   - [Usare lo stash](#usare-lo-stash)
   - [Creare un tag e una release](#creare-un-tag-e-una-release)
   - [Aggiornare release](#aggiornare-release)
-  - [Annullare modifiche o correggere commit`](#git-restore-git-reset-git-commit---amend)
+  - [Annullare modifiche o correggere commit](#git-restore-git-reset-git-commit---amend)
   - [Applicare un singolo commit: `git cherry-pick`](#applicare-un-singolo-commit-git-cherry-pick)
   - [Annullare un commit pubblico: `git revert`](#annullare-un-commit-pubblico-git-revert)
   - [Trovare il commit che ha introdotto un bug: `git bisect`](#trovare-il-commit-che-ha-introdotto-un-bug-git-bisect)
