@@ -19,7 +19,7 @@ Ogni volta che imparo qualcosa di nuovo, lo aggiungo qui sotto
   - [Usare lo stash](#usare-lo-stash)
   - [Creare un tag e una release](#creare-un-tag-e-una-release)
   - [Aggiornare release](#aggiornare-release)
-  - [Annullare modifiche: `git restore` e `git reset`](#annullare-modifiche-git-restore-e-git-reset)
+  - [Annullare modifiche o correggere commit`](#git-restore-git-reset-git-commit---amend)
   - [Applicare un singolo commit: `git cherry-pick`](#applicare-un-singolo-commit-git-cherry-pick)
   - [Annullare un commit pubblico: `git revert`](#annullare-un-commit-pubblico-git-revert)
   - [Trovare il commit che ha introdotto un bug: `git bisect`](#trovare-il-commit-che-ha-introdotto-un-bug-git-bisect)
@@ -342,6 +342,8 @@ THE SOFTWARE.
 
 ## CHANGELOG
 
+#### v1.2 - 2025-08-01
+-  Aggiunto comando `git commit --amend` per sistemare l'ultimo commit effettuato senza annullarlo
 
 #### v1.2 - 2025-08-01
 -  Aggiunto comando `git restore` per annullare modifiche locali
